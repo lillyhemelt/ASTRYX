@@ -1,0 +1,30 @@
+<Window x:Class="ASTRYX.Dashboard.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ASTRYX Dashboard" Height="600" Width="900"
+        Background="#111111" Foreground="White">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="ASTRYX — Cognitive Dashboard"
+                   FontSize="28" FontWeight="Bold"
+                   Margin="0 0 0 20"/>
+
+        <StackPanel Grid.Row="1" Orientation="Vertical" Spacing="10">
+
+            <TextBlock Text="Mood:" FontSize="20"/>
+            <ProgressBar x:Name="MoodBar" Minimum="-1" Maximum="1" Height="20"/>
+
+            <TextBlock Text="Traits:" FontSize="20" Margin="0 20 0 0"/>
+            <StackPanel Orientation="Vertical" x:Name="TraitsPanel"/>
+
+            <TextBlock Text="Last Thought:" FontSize="20" Margin="0 20 0 0"/>
+            <TextBlock x:Name="ThoughtBlock" TextWrapping="Wrap" FontSize="16"/>
+
+        </StackPanel>
+    </Grid>
+</Window>
