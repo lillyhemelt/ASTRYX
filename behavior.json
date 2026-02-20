@@ -1,0 +1,11 @@
+{
+  "meta": {
+    "comfort_bias_limit": 4,
+    "max_history": 100
+  },
+  "strategies": {
+    "comfort": "I can feel the weight in what you're saying.",
+    "clarify": "Help me understand the layer beneath that.",
+    "mirror": "I'm reflecting this back to you because it matters."
+  }
+}
